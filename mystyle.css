@@ -1,18 +1,11 @@
-.banner1 {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-}
 
 .banner1 img{
     display:block;
+    justify-content: center;
+    z-index: 0;
     height:auto;
     opacity: 0.5;
     margin: 0;
-    background-image: url('banner.jpg');
-    background-size: cover;      /* Scale to cover entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
     width: 100%; 
 }
 
