@@ -9,7 +9,7 @@
 }
 
 .banner1 h1{
-    font-size: larger;
+    font-size: 20%;
     display:flex;
     position: absolute;
     top: 100px;
@@ -50,4 +50,15 @@
 .accordion > input[name="collapse"]:checked ~ .content {
   height: 150px;
   transition: height 0.5s;
+}
+
+#insta{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#instalogo{
+    display:flex;
+    flex-direction: row;
+    size: 0.5cm;
 }
