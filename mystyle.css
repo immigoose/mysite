@@ -60,15 +60,6 @@
   background: #252525;
 }
  
-.accordion .handle label:before {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 1em;
-  line-height: 1.556em;
-  vertical-align: middle;
-  transition: 0.4s;
-  
-}
  
 .accordion > input[name="collapse"]:checked ~ .handle label:before {
     transform: rotate(180deg);
