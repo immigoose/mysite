@@ -1,3 +1,8 @@
+.banner1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 
 .banner1 img{
     display:block;
@@ -8,18 +13,38 @@
     width: 100%; 
 }
 
-.banner1 h1{
-    font-size: 20%;
-    display:flex;
-    position: absolute;
-    top: 100px;
-    justify-content: left;
-    
+.banner1 h1 {
+  z-index: 50;
+  font-size: 50pt;
+  color: white;
 }
 
-.accordion > input[name="collapse"] {
+.banner1 .title-l1{
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  translate: 0 -50%;
+}
+
+.banner1 .title-l2{
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  translate: -50% -50%;
+}
+
+.banner1 .title-l3{
+  position: absolute;
+  top: 35vh;
+  left: 90vw;
+  translate: -100% -50%;
+}
+
+
+.accordion > .inputcb {
   display: none;
 }
+
 .accordion .content {
   background: #fff;
   overflow: hidden;
@@ -27,38 +52,64 @@
   transition: 0.5s;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .accordion label {
   color: #fff;
   cursor: pointer;
   font-weight: normal;
   padding: 10px;
   background: #b0100c;
-  
+  user-select: none;
 }
  
 .accordion label:hover,
 .accordion label:focus {
   background: #252525;
 }
- 
- 
-.accordion > input[name="collapse"]:checked ~ .handle label::before {
-    transform: rotate(180deg);
-    transform-origin: center;
-    transition: 0.4s;
-}
-.accordion > input[name="collapse"]:checked ~ .content {
+
+.accordion > .inputcb:checked ~ .content {
   height: 150px;
   transition: height 0.5s;
 }
-
+ 
 #insta{
     display:flex;
     flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
     justify-content: flex-start;
 }
 #instalogo{
-    display:flex;
-    flex-direction: row;
-    size: 0.5cm;
+    display:block;
+    font-size: 24px;
+    color: #000000;
+}
+
+summary{
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #b0100c;
+    user-select: none;
+    width: 50px;
+}
+
+details > div {
+    background: #fff;
+    overflow: hidden;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.contents {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.contents > * {
+  flex: 1;
 }

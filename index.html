@@ -4,55 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./mystyle.css"
+    <link rel="stylesheet" href="./mystyle.css">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
 </head>
 <body>
     <div>
         <container class="banner1">
-        <h1>Immanuel
-            <br>   Maria 
-            <br>      Gans</h1>
+                <h1 class="title-l1">Immanuel</h1>
+                <h1 class="title-l2">Maria</h1>
+                <h1 class="title-l3">Gans</h1>
+        
         <img id="banner" src="./bilder/banner.jpg">
         </container>
-
-    <section class="accordion">
-        <input type="radio" name="collapse" id="handle1">
-        <h2 class="handle">
-             <label for="handle1">
-            Projects
-            </label>
-         </h2>
+    </div>
+    <div class="contents">
+        <div class="menu">
+            <details>
+            <summary>
+                Projects
+            </summary>
   
-         <div class="content">
-             <p>Your detailed contents...</p>  
-         </div>
-
-         <input type="radio" name="collapse" id="handle2">
-        <h2 class="handle">
-             <label for="handle2">
-            Contact
-            </label>
-         </h2>
+            <div class="content">
+                <p>Your detailed contents...</p>  
+            </div>
+        </details>
+        <details>
+            <summary>
+                Contact
+            </summary>
   
-         <div class="content">
-             <p>Your detailed contents...</p>  
-         </div>
+            <div class="content">
+                <p>Your detailed contents...</p>  
+            </div>
+        </details>
+        <details>
+            <summary>
+                Socials
+            </summary>
+            
+            <div class="content">
+                <a id="insta" href="https://www.instagram.com/theartgoose/">
+                    <ion-icon id="instalogo" name="logo-instagram" aria-hidden="true"></ion-icon>
+                    <span>Instagram (@theartgoose)</span>
+                </a>
+            </div>
+        </details>
+        </div>
+        <img src="data:image/jpeg;base64,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" alt="">
+    </div>
 
-         <input type="radio" name="collapse" id="handle3">
-        <h2 class="handle">
-             <label for="handle3">
-            Socials
-            </label>
-         </h2>
-  
-         <div class="content">
-             <a id="insta" href="https://www.instagram.com/theartgoose/">
-                Instagram (@theartgoose)
-             </a>  
-             <ion-icon name="logo-instagram"></ion-icon>
-         </div>
-    </section>
-    <script type="module" src="https://esm.sh/ionicons@latest/loader"></script>
-    <script nomodule src="https://esm.sh/ionicons@latest/loader"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
