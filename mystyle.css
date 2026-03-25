@@ -42,7 +42,7 @@
 }
  
  
-.accordion > input[name="collapse"]:checked ~ .handle label:before {
+.accordion > input[name="collapse"]:checked ~ .handle label::before {
     transform: rotate(180deg);
     transform-origin: center;
     transition: 0.4s;
