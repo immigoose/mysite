@@ -1,7 +1,6 @@
 
 .banner1 img{
     display:block;
-    justify-content: center;
     z-index: 0;
     height:auto;
     opacity: 0.5;
@@ -10,14 +9,12 @@
 }
 
 .banner1 h1{
+    display:flex;
     position: absolute;
-    top: 50%;
+    top: 100px;
     justify-content: left;
     
 }
-
-
-
 
 .accordion > input[name="collapse"] {
   display: none;
