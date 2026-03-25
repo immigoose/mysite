@@ -7,3 +7,20 @@
     width: 100%;
     height: 400px; /* Adjust height as needed */
 }
+.banner1 {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+.banner1 img{
+    display:block;
+    width: 100%;
+    height:auto;
+
+}
+.banner1 h1{
+    position: absolute;
+    top: 50%;
+    justify-content: left;
+    
+}
